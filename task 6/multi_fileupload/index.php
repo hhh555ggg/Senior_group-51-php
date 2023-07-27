@@ -5,9 +5,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     // setting upload errors
     $errors=array();
     $image=$_FILES['my_work'];
-    // echo "<pre>";
-    // print_r($image);
-    // echo "</pre>";
+    
     $image_name=$image['name'];
     $image_path=$image['full_path'];
     $image_type=$image['type'];
@@ -119,3 +117,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     <input type="file" name="my_work[]" multiple="multi">
     <input type="submit" value="upload">
 </form>
+
+
+
